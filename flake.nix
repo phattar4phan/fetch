@@ -49,7 +49,10 @@
         fi
 
         source env/bin/activate
-      ''
-    }
-  }
+        python --version
+
+        uv run pkgs.py
+      '';
+    };
+  };
 }
